@@ -15,8 +15,8 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/splash_logo"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
             android:id="@+id/splash_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="45dp"
             android:fontFamily="@font/inter_bold"
             android:text="@string/splash_title_text"
             android:textColor="#000000"
