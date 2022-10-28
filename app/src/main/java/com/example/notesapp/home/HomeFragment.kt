@@ -102,6 +102,16 @@ class HomeFragment : Fragment() {
                 // list need to search item from all notes
                 filteredNotes = it as ArrayList<Notes>
 
+                if(filteredNotes.size==0)
+                {
+                    binding.notFoundLogo.visibility=View.VISIBLE
+                }
+                else
+                {
+                    binding.notFoundLogo.visibility=View.GONE
+
+                }
+
                 // to bind correct data
                 it?.let {
                     adapter.data = it
