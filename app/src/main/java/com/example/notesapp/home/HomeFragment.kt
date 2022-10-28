@@ -1,8 +1,10 @@
 package com.example.notesapp.home
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.util.Log
 import android.view.*
+import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
@@ -15,6 +17,7 @@ import com.example.notesapp.adapter.NotesApapter
 import com.example.notesapp.database.Notes
 import com.example.notesapp.database.NotesDatabase
 import com.example.notesapp.databinding.FragmentHomeBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
 class HomeFragment : Fragment() {
@@ -115,6 +118,15 @@ class HomeFragment : Fragment() {
                 // list need to search item from low priority notes
                 filteredNotes = it as ArrayList<Notes>
 
+                if(filteredNotes.size==0)
+                {
+                    binding.notFoundLogo.visibility=View.VISIBLE
+                }
+                else
+                {
+                    binding.notFoundLogo.visibility=View.GONE
+
+                }
                 // to bind correct data
                 it?.let {
                     adapter.data = it
@@ -132,6 +144,16 @@ class HomeFragment : Fragment() {
                 // list need to search item from medium priority notes
                 filteredNotes = it as ArrayList<Notes>
 
+                if(filteredNotes.size==0)
+                {
+                    binding.notFoundLogo.visibility=View.VISIBLE
+                }
+                else
+                {
+                    binding.notFoundLogo.visibility=View.GONE
+
+                }
+
                 // to bind correct data
                 it?.let {
                     adapter.data = it
@@ -147,6 +169,16 @@ class HomeFragment : Fragment() {
 
                 // list need to search item from high priority notes
                 filteredNotes = it as ArrayList<Notes>
+
+                if(filteredNotes.size==0)
+                {
+                    binding.notFoundLogo.visibility=View.VISIBLE
+                }
+                else
+                {
+                    binding.notFoundLogo.visibility=View.GONE
+
+                }
 
                 // to bind correct data
                 it?.let {
@@ -191,7 +223,7 @@ class HomeFragment : Fragment() {
         var newFilteredList = arrayListOf<Notes>()
         for (i in filteredNotes) {
             // NOTE:- i changed below newtext parameters to toString , then it started to collect data by matching
-            if (i.title!!.contains(newText!!.toString()) || i.subTitle!!.contains(newText.toString())) {
+            if (i.title!!.contains(newText!!.toString()) || i.subTitle!!.contains(newText.toString()) || i.note!!.contains(newText.toString())) {
                 newFilteredList.add(i)
             }
         }
@@ -202,14 +234,33 @@ class HomeFragment : Fragment() {
     //<--------------------------------------------------------------->
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.clear_data) {
-            homeViewModel.onClearNotes()
-            Snackbar.make(
-                requireActivity().findViewById(android.R.id.content),
-                getString(R.string.cleared_all_data),
-                Snackbar.LENGTH_SHORT
-            ).show()
-        }
+       if (adapter.data.size!=0) {
+           if (item.itemId == R.id.clear_data) {
+               MaterialAlertDialogBuilder(requireActivity())
+                   .setTitle("Clear Data")
+                   .setMessage("Delete all data permanantly ?")
+                   .setPositiveButton("Yes") { dialogInterface, it ->
+                       homeViewModel.onClearNotes()
+                       Snackbar.make(
+                           requireActivity().findViewById(android.R.id.content),
+                           getString(R.string.cleared_all_data),
+                           Snackbar.LENGTH_SHORT
+                       ).show()
+                   }
+                   .setNegativeButton("No") { dialogInterface, it ->
+                       Toast.makeText(requireContext(), getString(R.string.ooooff), Toast.LENGTH_SHORT).show()
+                   }
+                   .show()
+           }
+       }
+        else
+       {
+           Snackbar.make(
+               requireActivity().findViewById(android.R.id.content),
+               getString(R.string.no_data_to_clear),
+               Snackbar.LENGTH_SHORT
+           ).show()
+       }
         return NavigationUI.onNavDestinationSelected(
             item!!,
             requireView().findNavController()
