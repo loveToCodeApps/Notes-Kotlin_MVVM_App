@@ -20,6 +20,12 @@ Notes s a note taking Android application 📱 built using Kotlin and MVVM Archi
 - [Material Components for Android](https://material.io/components) - Modular and customizable Material Design UI components for Android.
 - [Coroutine](https://developer.android.com/kotlin/coroutines#:~:text=A%20coroutine%20is%20a%20concurrency,established%20concepts%20from%20other%20languages.) - A coroutine is a concurrency design pattern that you can use on Android to simplify code that executes asynchronously
 
+# Architecture
+
+This app uses [MVVM (Model View View-Model)](https://developer.android.com/topic/architecture#recommended-app-arch) architecture.
+
+![68747470733a2f2f646576656c6f7065722e616e64726f69642e636f6d2f746f7069632f6c69627261726965732f6172636869746563747572652f696d616765732f66696e616c2d6172636869746563747572652e706e67](https://user-images.githubusercontent.com/80090908/194612432-65ddf3e4-9322-4f05-9a93-39c83d5f81a2.png)
+
 # 🔥 Screenshots
 
 ![1](https://user-images.githubusercontent.com/103168212/198641511-0a014315-fe88-42a3-9cfa-4e6874cf842f.png)
@@ -36,11 +42,7 @@ Notes s a note taking Android application 📱 built using Kotlin and MVVM Archi
 
 
 
-# Architecture
 
-This app uses [MVVM (Model View View-Model)](https://developer.android.com/topic/architecture#recommended-app-arch) architecture.
-
-![68747470733a2f2f646576656c6f7065722e616e64726f69642e636f6d2f746f7069632f6c69627261726965732f6172636869746563747572652f696d616765732f66696e616c2d6172636869746563747572652e706e67](https://user-images.githubusercontent.com/80090908/194612432-65ddf3e4-9322-4f05-9a93-39c83d5f81a2.png)
 
 ## 😄[CONTRIBUTING GUIDELINES](https://github.com/HawkItzme/KeepIt/blob/ContriBranch/Contribution.md)
 
