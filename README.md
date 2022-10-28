@@ -1,5 +1,5 @@
 # 📔 Notes
-Notes s a note taking Android application 📱 built using Kotlin and MVVM Architechture and also to demonstrate use of Modern Android development tools.
+Notes s a note taking Android application 📱 built using Kotlin and MVVM Architechture with coroutines and also to demonstrate use of Modern Android development tools.
 
 
 # 🔥 Features
