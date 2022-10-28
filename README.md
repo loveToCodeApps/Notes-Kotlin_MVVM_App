@@ -21,16 +21,16 @@ Notes s a note taking Android application 📱 built using Kotlin and MVVM Archi
 - [Coroutine](https://developer.android.com/kotlin/coroutines#:~:text=A%20coroutine%20is%20a%20concurrency,established%20concepts%20from%20other%20languages.) - A coroutine is a concurrency design pattern that you can use on Android to simplify code that executes asynchronously
 
 # 🔥 Screenshots
-![WhatsApp Image 2022-10-28 at 12 43 41 PM (1)](https://user-images.githubusercontent.com/103168212/198539283-7187e16d-e4a5-4f87-a685-e7a4f5195548.jpg)
-![WhatsApp Image 2022-10-28 at 12 43 41 PM](https://user-images.githubusercontent.com/103168212/198539321-5e04bcb5-7203-4cf8-bea0-2da0e7620f6d.jpg)
-![WhatsApp Image 2022-10-28 at 12 43 40 PM (1)](https://user-images.githubusercontent.com/103168212/198539511-d2f80197-dea6-4a02-9d3c-011ca279be47.jpg)
-![WhatsApp Image 2022-10-28 at 12 43 39 PM](https://user-images.githubusercontent.com/103168212/198539535-0092b83d-5e90-454b-962f-88d2a4f5f3ad.jpg)
-![WhatsApp Image 2022-10-28 at 12 43 38 PM (2)](https://user-images.githubusercontent.com/103168212/198539553-2ca7749d-f0d1-43ac-8cc0-abf65076c487.jpg)
-![WhatsApp Image 2022-10-28 at 12 43 38 PM (1)](https://user-images.githubusercontent.com/103168212/198539566-7829a617-d3d9-4108-bcfc-77ab06526bb9.jpg)
-![WhatsApp Image 2022-10-28 at 1 42 57 PM](https://user-images.githubusercontent.com/103168212/198539910-15bd0e7a-2a91-47aa-a602-d4a811490fbb.jpg)
-![WhatsApp Image 2022-10-28 at 12 43 38 PM (3)](https://user-images.githubusercontent.com/103168212/198539612-b0241af9-5efa-4336-8524-5e68fc1b4ef9.jpg)
-![WhatsApp Image 2022-10-28 at 12 43 37 PM](https://user-images.githubusercontent.com/103168212/198539635-e572e3d4-4fcc-4990-9265-009ac9dec4c7.jpg)
 
+![1](https://user-images.githubusercontent.com/103168212/198641511-0a014315-fe88-42a3-9cfa-4e6874cf842f.png)
+![2](https://user-images.githubusercontent.com/103168212/198639424-627d962d-b721-41d2-8acf-c88aa98d0677.png)
+![3](https://user-images.githubusercontent.com/103168212/198639431-6ac23ff0-5c3a-4cc2-b4ed-8bd9d537628b.png)
+![4](https://user-images.githubusercontent.com/103168212/198648788-7d12619e-ad54-4d68-b373-4cd9867b10b6.png)
+![5](https://user-images.githubusercontent.com/103168212/198639443-0c44e63b-0abf-4887-a74b-7b416d9e339d.png)
+![6](https://user-images.githubusercontent.com/103168212/198653817-0197a43b-28d8-4fef-adc2-7b460012ec28.png)
+![7](https://user-images.githubusercontent.com/103168212/198653777-26fc8230-e6e4-4038-81cb-be8296d47b9b.png)
+![8](https://user-images.githubusercontent.com/103168212/198653793-2e51cab4-7aa1-431b-a7b5-3bdc67c006bb.png)
+![10](https://user-images.githubusercontent.com/103168212/198653804-e4b728ea-4a8e-4a06-ac6e-5ee10ce32bda.png)
 
 
 
